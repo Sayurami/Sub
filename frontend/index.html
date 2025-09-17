@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Sub Generator</title>
+  <style>
+    body { background:#121212; color:#fff; font-family: Arial; display:flex; flex-direction:column; align-items:center; padding:20px;}
+    h1 { margin-bottom:20px; }
+    .video-container { margin-top:20px; }
+    video { width:640px; border-radius:10px; }
+    input, button { margin:10px; padding:8px 12px; font-size:16px; }
+  </style>
+</head>
+<body>
+  <h1>Upload Video to Generate Subtitles</h1>
+  <input type="file" id="videoInput" accept="video/*">
+  <button onclick="uploadVideo()">Generate Subtitles</button>
+
+  <div class="video-container" id="playerContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
